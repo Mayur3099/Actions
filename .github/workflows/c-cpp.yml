@@ -18,8 +18,8 @@ jobs:
     - name: install cppunit
       run: sudo apt install -y libcppunit-dev
     
-    - name: configure
-      run: ./configure
-      
-    - name: Me
-      run: g++ hello.cpp && ./a.exe
+    - name: compile tests
+      run: make test CXX=g++
+
+    - name: run tests
+      run: make run_test
