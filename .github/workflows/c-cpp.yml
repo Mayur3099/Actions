@@ -12,8 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
     
     - name: compile tests
       run: make test CXX=g++
